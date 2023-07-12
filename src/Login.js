@@ -7,7 +7,7 @@ function Login(){
 
     const onClick=(e)=>{
         if(id==="manager"&&pw==="jego"){
-
+            loaction.assign("http://localhost:3000/put");
         }
     }
 

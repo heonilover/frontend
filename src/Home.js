@@ -7,7 +7,7 @@ function Home(){
     const [content, setContent]=useState('');
 
     const onClick=(e)=>{
-        axios.get(`http://localhost:3000/put?title=${title}&content=${content}`);
+        axios.get(`http://localhost:3000/?title=${title}&content=${content}`);
     }
 
     return(
@@ -21,6 +21,7 @@ function Home(){
                     setContent(e.target.value)
                 }}/>
                 <button onClick={onClick}>제출</button>
+                <button onClick="location.assign='http//localhost:3000/login'">로그인</button>
             </form>
         </div>
     );
